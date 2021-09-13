@@ -113,7 +113,7 @@ $(".list-group").on("blur", "input[type='text']", function() {
   //get current text
   var date =$(this)
   .val()
-  .tring();
+  .string();
 
   // get the parent ul's id attribute
   var status = $(this)
@@ -132,7 +132,6 @@ $(".list-group").on("blur", "input[type='text']", function() {
   //replace input with span element
   $(this).replaceWith(taskSpan);
 });
-
 var auditTask = function(taskEl) {
   // get date from task element
   var date = $(taskEl)
